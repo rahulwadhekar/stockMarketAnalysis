@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header style="background-color: rgb(60, 60, 60); color: white;">
+        <h1 class="title">Stock Market Analysis</h1>
+    </header>
+
+    <main>
+        <div class="right" style="background-color: black;">
+            <div class="chartDisplay">
+                <section id="chart"></section>
+                <div id="chart-controls" class="timeButton">
+                    <button id="button-1mo" class="buttonT" aria-label="View stock data for 1 month">1 Month</button>
+                    <button id="button-3mo" class="buttonT" aria-label="View stock data for 3 months">3 Months</button>
+                    <button id="button-1y" class="buttonT" aria-label="View stock data for 1 year">1 Year</button>
+                    <button id="button-5y" class="buttonT" aria-label="View stock data for 5 years">5 Years</button>
+                </div>
+            </div>
+            
+            <section id="details">
+                <h2>Stock Details</h2>
+                <div id="detailSpan" class="stockDetails">
+                    <span id="span1">AAPL</span>
+                    <span id="span2" class="stockChange" style="color: green;">0.24493%</span>
+                    <span id="span3" class="stockPrice">$3.953</span>
+                </div>
+            </section>
+        </div>
+        
+        <div class="left">
+            <section id="list"></section>
+        </div>
+    </main>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
